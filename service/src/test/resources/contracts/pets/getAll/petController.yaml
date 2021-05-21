@@ -1,0 +1,8 @@
+name: api responding
+description: api is responding with 200
+request:
+  method: GET
+  url: /pets
+response:
+  bodyFromFile: response.json
+  status: 200

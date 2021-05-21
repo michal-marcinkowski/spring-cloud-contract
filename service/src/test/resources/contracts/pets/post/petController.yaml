@@ -1,0 +1,14 @@
+name: api responding
+description: api is responding with 200
+request:
+  method: POST
+  url: /pets
+  bodyFromFile: request.json
+  headers:
+    Content-type: "application/json"
+response:
+  status: 201
+  matchers:
+    headers:
+        - key: Location
+          regex: "http://localhost/customers/v1/.*"

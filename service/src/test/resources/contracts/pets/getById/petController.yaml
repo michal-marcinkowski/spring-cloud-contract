@@ -1,0 +1,15 @@
+name: api responding
+description: api is responding with 200
+request:
+  method: GET
+  url: /pets/1
+  matchers:
+
+response:
+  body:
+    id: 1
+  matchers:
+    headers:
+        - key: name
+          regex: .*
+  status: 200
