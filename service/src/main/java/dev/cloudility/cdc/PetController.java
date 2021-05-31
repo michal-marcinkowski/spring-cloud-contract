@@ -1,6 +1,5 @@
 package dev.cloudility.cdc;
 
-
 import dev.cloudility.cdc.model.Pet;
 import dev.cloudility.cdc.model.input.CreatePetRequest;
 import lombok.RequiredArgsConstructor;

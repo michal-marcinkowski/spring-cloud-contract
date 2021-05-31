@@ -9,7 +9,8 @@ response:
   body:
     id: 1
   matchers:
-    headers:
-        - key: name
-          regex: .*
+    body:
+        - path: name
+          type: by_regex
+          value: .*
   status: 200
